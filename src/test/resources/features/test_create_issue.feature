@@ -1,9 +1,11 @@
 Feature: Create issue in Jira
+
   Background:
     Given I navigate to Jira Login Page
     And I enter user name - "webinar5"
     And I enter password - "webinar5"
     And I click on the login button
+
   @Regression
   Scenario:
     When I am on the Home Page
