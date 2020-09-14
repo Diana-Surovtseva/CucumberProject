@@ -6,10 +6,8 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import pages.CreateIssueWindow;
@@ -119,9 +117,7 @@ public class StepDefinitions {
         new CreateIssueWindow().pressTabAfterIssueTypeField();
     }
 
-    //        public void isSummaryFieldDisplayed(){
-//        new CreateIssueWindow().isSummaryFieldDisplayed();
-//        }
+
     @And("^I input text to Summary field$")
     public void enterSummary() {
         new CreateIssueWindow().enterSummary();
@@ -152,7 +148,16 @@ public class StepDefinitions {
         new CreateIssueWindow().getPopUpText().contains("WEBINAR");
     }
 
+    @When("^I enter Username as \"([^\"]*)\" and Password as \"([^\"]*)\"$")
+    public void I_enter_Username_as_and_Password_as(String userName, String password) {
+        new LoginPage().enterUserName(userName);
+        new LoginPage().enterPassword(password);
+    }
 
+    @Then("^login should be unsuccessful$")
+    public void validateRelogin() {
+        new LoginPage().validateRelogin();
+    }
 }
 
 
