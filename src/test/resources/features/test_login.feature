@@ -8,7 +8,7 @@ Feature: Login To Jira
     And I click on the login button
     Then I am on the Home Page
 
-  @Regression @wip
+  @Regression
   Scenario: Failed Login to Jira
     Given I navigate to Jira Login Page
     And I enter user name - "webinar5"

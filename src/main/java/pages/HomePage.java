@@ -1,12 +1,20 @@
 package pages;
+import static com.codeborne.selenide.Selenide.*;
+import com.codeborne.selenide.Condition;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.WebDriver;
 import utils.WebDriverFactory;
-import java.time.Duration;
-import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
+
+
 public class HomePage {
-    public boolean onPage(){
-        WebDriverWait wait = new WebDriverWait(WebDriverFactory.getDriver(), Duration.ofSeconds(5).getSeconds());
-        return wait.until(presenceOfElementLocated(By.id("browse_link"))).isDisplayed();
+
+    public void onPage(){
+        $("#create_link").shouldBe(Condition.visible);
+        //WebDriverFactory.getDriver().findElConement(By.cssSelector("#create_link")).isDisplayed();
+    }
+
+    public void clickCreateIssueButton(){
+        //WebDriverFactory.getDriver().findElement(By.cssSelector("#create_link")).click();
+        $("#create_link").click();
     }
 }

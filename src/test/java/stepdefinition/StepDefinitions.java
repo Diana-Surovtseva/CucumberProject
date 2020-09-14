@@ -1,22 +1,30 @@
 package stepdefinition;
+
+import com.codeborne.selenide.Configuration;
 import com.google.common.io.Files;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import pages.CreateIssueWindow;
 import pages.HomePage;
 import pages.LoginPage;
 import utils.WebDriverFactory;
+
 import java.io.File;
 import java.io.IOException;
 
 public class StepDefinitions {
     @Before
     public void beforeCucumberScenario(Scenario scenario) {
-        WebDriverFactory.createInstance("Chrome");
+        Configuration.browser = "firefox";
+        //WebDriverFactory.createInstance("Chrome");
     }
 
     @After
@@ -28,7 +36,7 @@ public class StepDefinitions {
                 e.printStackTrace();
             }
         }
-        WebDriverFactory.getDriver().close();
+        //WebDriverFactory.getDriver().close();
     }
 
     public void takeScreenshot() throws IOException {
@@ -62,11 +70,90 @@ public class StepDefinitions {
 
     @When("^I am on the Home Page$")
     public void atTheHomePage() {
-        assert new HomePage().onPage();
+        new HomePage().onPage();
     }
 
     @When("^I debug$")
     public void debug() {
         int a = 0;
     }
+
+
+    @And("^I click on the create issue button$")
+    public void clickCreateIssueButton() {
+        new HomePage().clickCreateIssueButton();
+    }
+
+    @Then("^Create issue window is open$")
+    public void isProjectFieldDisplayed() {
+        new CreateIssueWindow().isProjectFieldDisplayed();
+    }
+
+    @And("^I clear project field$")
+    public void clearProjectField() {
+        new CreateIssueWindow().clearProjectField();
+    }
+
+    @And("^I input text to project field$")
+    public void inputProjectField() {
+        new CreateIssueWindow().inputProjectField();
+    }
+
+    @And("^I go to the Issue type field$")
+    public void pressTabAfterProjectField() {
+        new CreateIssueWindow().pressTabAfterProjectField();
+    }
+
+    @And("^I clear to issue-type field$")
+    public void clearIssueTypeField() {
+        new CreateIssueWindow().clearIssueTypeField();
+    }
+
+    @And("^I input text to issue-type field$")
+    public void enterIssueTypeField() {
+        new CreateIssueWindow().enterIssueTypeField();
+    }
+
+    @And("^I go to the Summary field$")
+    public void pressTabAfterIssueTypeField() {
+        new CreateIssueWindow().pressTabAfterIssueTypeField();
+    }
+
+    //        public void isSummaryFieldDisplayed(){
+//        new CreateIssueWindow().isSummaryFieldDisplayed();
+//        }
+    @And("^I input text to Summary field$")
+    public void enterSummary() {
+        new CreateIssueWindow().enterSummary();
+    }
+
+    @And("^I clear Reporter field$")
+    public void clearReporterField() {
+        new CreateIssueWindow().clearReporterField();
+    }
+
+    @And("^I input text to Reporter field$")
+    public void enterReporterField() {
+        new CreateIssueWindow().enterReporterField();
+    }
+
+    @When("^I press on the create button$")
+    public void pressCreateIssueButton() {
+        new CreateIssueWindow().pressCreateIssueButton();
+    }
+
+    @Then("^An issue is created$")
+    public void isPopUpPresent() {
+        new CreateIssueWindow().isPopUpPresent();
+    }
+
+    @And("^The issue number is shown$")
+    public void getPopUpText() {
+        new CreateIssueWindow().getPopUpText().contains("WEBINAR");
+    }
+
+
 }
+
+
+

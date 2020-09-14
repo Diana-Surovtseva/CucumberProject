@@ -1,0 +1,362 @@
+<html class="mozilla" lang="en"><head>
+    
+
+
+
+
+
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="application-name" content="JIRA" data-name="jira" data-version="8.1.0"><meta name="ajs-server-scheme" content="https">
+<meta name="ajs-server-port" content="443">
+<meta name="ajs-server-name" content="jira.hillel.it">
+<meta name="ajs-behind-proxy" content="null">
+<meta name="ajs-base-url" content="https://jira.hillel.it">
+<meta name="ajs-dev-mode" content="false">
+<meta name="ajs-context-path" content="">
+<meta name="ajs-version-number" content="8.1.0">
+<meta name="ajs-build-number" content="801000">
+<meta name="ajs-is-beta" content="false">
+<meta name="ajs-is-rc" content="false">
+<meta name="ajs-is-snapshot" content="false">
+<meta name="ajs-is-milestone" content="false">
+<meta name="ajs-remote-user" content="">
+<meta name="ajs-remote-user-fullname" content="">
+<meta name="ajs-user-locale" content="en_US">
+<meta name="ajs-user-locale-group-separator" content=",">
+<meta name="ajs-app-title" content="Hillel IT School JIRA">
+<meta name="ajs-keyboard-shortcuts-enabled" content="true">
+<meta name="ajs-keyboard-accesskey-modifier" content="Alt+Shift">
+<meta name="ajs-enabled-dark-features" content="[&quot;com.atlassian.jira.agile.darkfeature.editable.detailsview&quot;,&quot;nps.survey.inline.dialog&quot;,&quot;com.atlassian.jira.agile.darkfeature.edit.closed.sprint.enabled&quot;,&quot;jira.plugin.devstatus.phasetwo&quot;,&quot;jira.frother.reporter.field&quot;,&quot;atlassian.rest.xsrf.legacy.enabled&quot;,&quot;jira.issue.status.lozenge&quot;,&quot;com.atlassian.jira.config.BIG_PIPE&quot;,&quot;com.atlassian.jira.projects.issuenavigator&quot;,&quot;com.atlassian.jira.config.PDL&quot;,&quot;jira.plugin.devstatus.phasetwo.enabled&quot;,&quot;atlassian.aui.raphael.disabled&quot;,&quot;app-switcher.new&quot;,&quot;frother.assignee.field&quot;,&quot;com.atlassian.jira.projects.ProjectCentricNavigation.Switch&quot;,&quot;jira.onboarding.cyoa&quot;,&quot;com.atlassian.jira.agile.darkfeature.kanplan.enabled&quot;,&quot;com.atlassian.jira.config.ProjectConfig.MENU&quot;,&quot;com.atlassian.jira.projects.sidebar.DEFER_RESOURCES&quot;,&quot;com.atlassian.jira.agile.darkfeature.kanplan.epics.and.versions.enabled&quot;,&quot;com.atlassian.jira.agile.darkfeature.sprint.goal.enabled&quot;,&quot;jira.zdu.admin-updates-ui&quot;,&quot;jira.zdu.jmx-monitoring&quot;,&quot;sd.new.settings.sidebar.location.disabled&quot;,&quot;jira.zdu.cluster-upgrade-state&quot;,&quot;com.atlassian.jira.agile.darkfeature.splitissue&quot;,&quot;com.atlassian.jira.config.CoreFeatures.LICENSE_ROLES_ENABLED&quot;,&quot;jira.export.csv.enabled&quot;]">
+<meta name="ajs-in-admin-mode" content="false">
+<meta name="ajs-is-sysadmin" content="false">
+<meta name="ajs-is-admin" content="false">
+<meta name="ajs-outgoing-mail-enabled" content="true">
+<meta name="ajs-archiving-enabled" content="false">
+<meta name="ajs-date-relativize" content="true">
+<meta name="ajs-date-time" content="h:mm a">
+<meta name="ajs-date-day" content="EEEE h:mm a">
+<meta name="ajs-date-dmy" content="dd/MMM/yy">
+<meta name="ajs-date-complete" content="dd/MMM/yy h:mm a">
+<script type="text/javascript">var AJS=AJS||{};AJS.debug=true;</script>
+
+
+    
+<meta id="atlassian-token" name="atlassian-token" content="B5UK-KS9I-AUMJ-CYGN_f0eada1a7b3e2c29cc10eeae8ff670adc3dc896e_lout">
+
+
+
+<link rel="shortcut icon" href="/s/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/_/images/fav-jsw.png">
+
+
+    
+
+
+
+<!--[if IE]><![endif]-->
+<script type="text/javascript">
+    (function() {
+        var contextPath = '';
+        var eventBuffer = [];
+
+        function printDeprecatedMsg() {
+            if (console && console.warn) {
+                console.warn('DEPRECATED JS - contextPath global variable has been deprecated since 7.4.0. Use `wrm/context-path` module instead.');
+            }
+        }
+
+        function sendEvent(analytics, postfix) {
+            analytics.send({
+                name: 'js.globals.contextPath.' + postfix
+            });
+        }
+
+        function sendDeprecatedEvent(postfix) {
+            try {
+                var analytics = require('jira/analytics');
+                if (eventBuffer.length) {
+                    eventBuffer.forEach(function(value) {
+                        sendEvent(analytics, value);
+                    });
+                    eventBuffer = [];
+                }
+
+                if (postfix) {
+                    sendEvent(analytics, postfix);
+                }
+            } catch(ex) {
+                eventBuffer.push(postfix);
+                setTimeout(sendDeprecatedEvent, 1000);
+            }
+        }
+
+        Object.defineProperty(window, 'contextPath', {
+            get: function() {
+                printDeprecatedMsg();
+                sendDeprecatedEvent('get');
+                return contextPath;
+            },
+            set: function(value) {
+                printDeprecatedMsg();
+                sendDeprecatedEvent('set');
+                contextPath = value;
+            }
+        });
+    })();
+
+</script>
+<script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};window.WRM._unparsedErrors=window.WRM._unparsedErrors||{};
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"\"";
+WRM._unparsedData["jira.core:feature-flags-data.feature-flag-data"]="{\"enabled-feature-keys\":[\"com.atlassian.jira.agile.darkfeature.editable.detailsview\",\"nps.survey.inline.dialog\",\"com.atlassian.jira.agile.darkfeature.edit.closed.sprint.enabled\",\"jira.plugin.devstatus.phasetwo\",\"jira.frother.reporter.field\",\"atlassian.rest.xsrf.legacy.enabled\",\"jira.issue.status.lozenge\",\"com.atlassian.jira.config.BIG_PIPE\",\"com.atlassian.jira.projects.issuenavigator\",\"com.atlassian.jira.config.PDL\",\"jira.plugin.devstatus.phasetwo.enabled\",\"atlassian.aui.raphael.disabled\",\"app-switcher.new\",\"frother.assignee.field\",\"com.atlassian.jira.projects.ProjectCentricNavigation.Switch\",\"jira.onboarding.cyoa\",\"com.atlassian.jira.agile.darkfeature.kanplan.enabled\",\"com.atlassian.jira.config.ProjectConfig.MENU\",\"com.atlassian.jira.projects.sidebar.DEFER_RESOURCES\",\"com.atlassian.jira.agile.darkfeature.kanplan.epics.and.versions.enabled\",\"com.atlassian.jira.agile.darkfeature.sprint.goal.enabled\",\"jira.zdu.admin-updates-ui\",\"jira.zdu.jmx-monitoring\",\"sd.new.settings.sidebar.location.disabled\",\"jira.zdu.cluster-upgrade-state\",\"com.atlassian.jira.agile.darkfeature.splitissue\",\"com.atlassian.jira.config.CoreFeatures.LICENSE_ROLES_ENABLED\",\"jira.export.csv.enabled\"],\"feature-flag-states\":{\"mail.batching.override.core\":true,\"jira.spectrum.m1\":true,\"jira.spectrum.m2\":false,\"com.atlassian.jira.issuetable.draggable\":true,\"mail.batching\":false,\"com.atlassian.jira.agile.darkfeature.kanban.hide.old.done.issues\":true,\"jira.jql.suggestrecentfields\":false,\"com.atlassian.jira.agile.darkfeature.backlog.showmore\":true,\"com.atlassian.jira.agile.darkfeature.optimistic.transitions\":true,\"com.atlassian.jira.issuetable.move.links.hidden\":true,\"jira.renderer.consider.variable.format\":true,\"com.atlassian.jira.agile.darkfeature.kanplan\":false,\"jira.priorities.per.project.jsd\":true,\"jira.instrumentation.laas\":false,\"com.atlassian.jira.agile.darkfeature.rapid.boards.bands\":true,\"com.atlassian.jira.sharedEntityEditRights\":true,\"jira.customfields.paginated.ui\":true,\"com.atlassian.jira.agile.darkfeature.flexible.boards\":true,\"com.atlassian.jira.agile.darkfeature.edit.closed.sprint\":false,\"jira.create.linked.issue\":true,\"mail.batching.user.notification\":true,\"jira.spectrum.m1b\":true,\"com.atlassian.jira.agile.darkfeature.sprint.goal\":false,\"com.atlassian.jira.agile.darkfeature.dataonpageload\":true,\"mail.batching.create.section.cf\":true,\"jira.sal.host.connect.accessor.existing.transaction.will.create.transactions\":true,\"com.atlassian.jira.custom.csv.escaper\":true,\"com.atlassian.jira.plugin.issuenavigator.filtersUxImprovment\":true,\"com.atlassian.jira.agile.darkfeature.kanplan.epics.and.versions\":false,\"jira.quick.search\":true,\"jira.jql.smartautoselectfirst\":false,\"com.atlassian.jira.projects.per.project.permission.query\":true,\"com.atlassian.jira.issues.archiving\":true,\"com.atlassian.jira.projects.archiving\":true,\"index.use.snappy\":true,\"jira.priorities.per.project\":true,\"com.atlassian.jira.upgrade.startup.fix.index\":true}}";
+WRM._unparsedData["jira.core:default-comment-security-level-data.DefaultCommentSecurityLevelHelpLink"]="{\"extraClasses\":\"default-comment-level-help\",\"title\":\"Commenting on an Issue\",\"url\":\"https://docs.atlassian.com/jira/jcore-docs-081/Editing+and+collaborating+on+issues#Editingandcollaboratingonissues-restrictacomment\",\"isLocal\":false}";
+WRM._unparsedData["jira.core:dateFormatProvider.allFormats"]="{\"dateFormats\":{\"meridiem\":[\"AM\",\"PM\"],\"eras\":[\"BC\",\"AD\"],\"months\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"],\"monthsShort\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\"],\"weekdaysShort\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],\"weekdays\":[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"]},\"lookAndFeelFormats\":{\"relativize\":\"true\",\"time\":\"h:mm a\",\"day\":\"EEEE h:mm a\",\"dmy\":\"dd/MMM/yy\",\"complete\":\"dd/MMM/yy h:mm a\"}}";
+WRM._unparsedData["com.atlassian.plugins.helptips.jira-help-tips:help-tip-manager.JiraHelpTipData"]="{\"anonymous\":true}";
+WRM._unparsedData["com.atlassian.jira.jira-issue-nav-components:issueviewer.features"]="{\"rteEnabled\":true}";
+WRM._unparsedData["com.atlassian.analytics.analytics-client:policy-update-init.policy-update-data-provider"]="false";
+WRM._unparsedData["com.atlassian.analytics.analytics-client:programmatic-analytics-init.programmatic-analytics-data-provider"]="false";
+WRM._unparsedData["jira.core:avatar-picker-data.data"]="{}";
+WRM._unparsedData["com.atlassian.jira.jira-header-plugin:dismissedFlags.flags"]="{\"dismissed\":[]}";
+WRM._unparsedData["com.atlassian.jira.jira-header-plugin:newsletter-signup-tip-init.newsletterSignup"]="{\"signupDescription\":\"Get updates, inspiration and best practices from the team behind Jira.\",\"formUrl\":\"https://www.atlassian.com/apis/exact-target/{0}/subscribe?mailingListId=1401671\",\"signupTitle\":\"Sign up!\",\"signupId\":\"newsletter-signup-tip\",\"showNewsletterTip\":false}";
+WRM._unparsedData["com.atlassian.jira.project-templates-plugin:project-templates-plugin-resources.ptAnalyticsData"]="{\"instanceCreatedDate\":\"2017-09-21\"}";
+WRM._unparsedData["jira.core:user-message-flags-data.adminLockout"]="{}";
+WRM._unparsedData["jira.request.correlation-id"]="\"7391623599a751\"";
+WRM._unparsedData["dashboardInfoMessage"]="\"\"";
+WRM._unparsedData["dashboardInstallMessage"]="null";
+if(window.WRM._dataArrived)window.WRM._dataArrived();</script>
+<link type="text/css" rel="stylesheet" href="/s/99d8a5797ad3e987552043e12d854e99-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/5435cf25f409c0ae2e20397b08c1e337/_/download/contextbatch/css/_super/batch.css" data-wrm-key="_super" data-wrm-batch-type="context" media="all">
+<link type="text/css" rel="stylesheet" href="/s/50061ed0ee1c4bdf7c845e754e4bd816-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/1211b6efb3d0806bf82b237acfa180f5/_/download/contextbatch/css/atl.dashboard,jira.global,atl.general,jira.dashboard,-_super/batch.css?agile_global_admin_condition=true&amp;jag=true" data-wrm-key="atl.dashboard,jira.global,atl.general,jira.dashboard,-_super" data-wrm-batch-type="context" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/8.0.1/_/download/batch/com.atlassian.auiplugin:split_aui.pattern.label/com.atlassian.auiplugin:split_aui.pattern.label.css" data-wrm-key="com.atlassian.auiplugin:split_aui.pattern.label" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/1e9360cc6af883eb6b91822389e9cf86-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/1.0/_/download/batch/jira.webresources:global-static-adgs/jira.webresources:global-static-adgs.css" data-wrm-key="jira.webresources:global-static-adgs" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/92fe13960ed05b21a42b5b5131daed6a-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/1.0/_/download/batch/jira.webresources:global-static/jira.webresources:global-static.css" data-wrm-key="jira.webresources:global-static" data-wrm-batch-type="resource" media="all">
+<script type="text/javascript" src="/s/a1b56ffff94ae958c24e779daa4b04a7-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/5435cf25f409c0ae2e20397b08c1e337/_/download/contextbatch/js/_super/batch.js?locale=en-US" data-wrm-key="_super" data-wrm-batch-type="context" data-initially-rendered=""></script>
+<script type="text/javascript" src="/s/a2ef34d57d10a3c301a6f8bc558f73ae-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/1211b6efb3d0806bf82b237acfa180f5/_/download/contextbatch/js/atl.dashboard,jira.global,atl.general,jira.dashboard,-_super/batch.js?agile_global_admin_condition=true&amp;content-type=text%2Fjavascript%3B+charset%3DUTF-8&amp;jag=true&amp;locale=en-US" data-wrm-key="atl.dashboard,jira.global,atl.general,jira.dashboard,-_super" data-wrm-batch-type="context" data-initially-rendered=""></script>
+<script type="text/javascript" src="/s/a2ef34d57d10a3c301a6f8bc558f73ae-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/1211b6efb3d0806bf82b237acfa180f5/_/download/contextbatch/js/atl.dashboard,jira.global,atl.general,jira.dashboard,-_super/batch.js?agile_global_admin_condition=true&amp;jag=true&amp;locale=en-US" data-wrm-key="atl.dashboard,jira.global,atl.general,jira.dashboard,-_super" data-wrm-batch-type="context" data-initially-rendered=""></script>
+<script type="text/javascript" src="/s/6555976d7ba3342ee61cccff904c3bfd-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/aae1242f5fc81cc6a5bb8bc963ccda29/_/download/contextbatch/js/atl.global,-_super/batch.js?locale=en-US" data-wrm-key="atl.global,-_super" data-wrm-batch-type="context" data-initially-rendered=""></script>
+<script type="text/javascript" src="/s/8786873d149fcfb0748304ba6e62a1af-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/3.0.3/_/download/batch/com.atlassian.jira.jira-tzdetect-plugin:tzdetect-banner-component/com.atlassian.jira.jira-tzdetect-plugin:tzdetect-banner-component.js?locale=en-US" data-wrm-key="com.atlassian.jira.jira-tzdetect-plugin:tzdetect-banner-component" data-wrm-batch-type="resource" data-initially-rendered=""></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/3.0.3/_/download/batch/com.atlassian.jira.jira-tzdetect-plugin:tzdetect-lib/com.atlassian.jira.jira-tzdetect-plugin:tzdetect-lib.js" data-wrm-key="com.atlassian.jira.jira-tzdetect-plugin:tzdetect-lib" data-wrm-batch-type="resource" data-initially-rendered=""></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/1.0/_/download/batch/jira.webresources:calendar-en/jira.webresources:calendar-en.js" data-wrm-key="jira.webresources:calendar-en" data-wrm-batch-type="resource" data-initially-rendered=""></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/1.0/_/download/batch/jira.webresources:calendar-localisation-moment/jira.webresources:calendar-localisation-moment.js" data-wrm-key="jira.webresources:calendar-localisation-moment" data-wrm-batch-type="resource" data-initially-rendered=""></script>
+<script type="text/javascript" src="/s/f7fbb1e6a6948ca974e5062368f704f2-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/8.0.1/_/download/batch/com.atlassian.auiplugin:split_aui.pattern.label/com.atlassian.auiplugin:split_aui.pattern.label.js?locale=en-US" data-wrm-key="com.atlassian.auiplugin:split_aui.pattern.label" data-wrm-batch-type="resource" data-initially-rendered=""></script>
+<script type="text/javascript" src="/s/f7fbb1e6a6948ca974e5062368f704f2-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/8.0.1/_/download/batch/com.atlassian.auiplugin:split_aui.pattern.table/com.atlassian.auiplugin:split_aui.pattern.table.js?locale=en-US" data-wrm-key="com.atlassian.auiplugin:split_aui.pattern.table" data-wrm-batch-type="resource" data-initially-rendered=""></script>
+<link type="text/css" rel="stylesheet" href="/s/4e228b4bf2c0f2970b0a3bd0cca3635a-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/966c1ac51402bf7d09640d7a749a72d6/_/download/contextbatch/css/jira.global.look-and-feel,-_super/batch.css" data-wrm-key="jira.global.look-and-feel,-_super" data-wrm-batch-type="context" media="all">
+
+<script type="text/javascript" src="/rest/api/1.0/shortcuts/801000/bf51fc7342fffc0b2209e411302a6ac0/shortcuts.js"></script>
+
+
+
+    
+
+
+
+
+
+
+
+<title>System Dashboard - Hillel IT School JIRA</title>
+<link rel="search" type="application/opensearchdescription+xml" href="/osd.jsp" title="System Dashboard - Hillel IT School JIRA">
+
+
+<script type="text/javascript" charset="utf-8" src="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/be9ff0efea54a6453d2ac60b92912a09/_/download/contextbatch/js/browser-metrics-plugin.contrib,-_super,-atl.dashboard,-atl.general/batch.js?agile_global_admin_condition=true&amp;jag=true"></script><link rel="stylesheet" type="text/css" href="/s/8fba5dcf7d770bfa82674cf89ca41435-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/bcb6f33a1457ef893496ac20b0c55a7b/_/download/contextbatch/css/com.atlassian.jira.plugins.jira-development-integration-plugin:8,-_super/batch.css"><link rel="stylesheet" type="text/css" href="/s/431006b7798dde30d7728c5df9bb0948-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/ab30ee84e296231a65c609f28d584cd2/_/download/contextbatch/css/com.atlassian.jira.plugins.jira-development-integration-plugin:0,-_super,-atl.dashboard,-jira.global,-atl.general/batch.css?agile_global_admin_condition=true&amp;jag=true"><script type="text/javascript" charset="utf-8" src="/s/f7fbb1e6a6948ca974e5062368f704f2-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/bcb6f33a1457ef893496ac20b0c55a7b/_/download/contextbatch/js/com.atlassian.jira.plugins.jira-development-integration-plugin:8,-_super/batch.js?locale=en-US"></script><script type="text/javascript" charset="utf-8" src="/s/fbbeac69ea3ead5d89d953a7d8e7023f-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/ab30ee84e296231a65c609f28d584cd2/_/download/contextbatch/js/com.atlassian.jira.plugins.jira-development-integration-plugin:0,-_super,-atl.dashboard,-jira.global,-atl.general/batch.js?agile_global_admin_condition=true&amp;jag=true&amp;locale=en-US"></script></head>
+
+
+
+
+
+<body id="jira" class="aui-layout aui-theme-default page-type-dashboard" data-version="8.1.0" data-aui-version="8.0.1-SNAPSHOT">
+<div id="page">
+    <header id="header" role="banner">
+        
+
+
+
+
+
+
+<script>
+require(["jquery", "jira/license-banner"], function ($, licenseBanner) {
+    $(function () {
+        licenseBanner.showLicenseBanner("");
+        licenseBanner.showLicenseFlag("");
+    });
+});
+</script>
+
+
+
+        
+
+
+
+
+        
+
+
+<nav class="aui-header aui-dropdown2-trigger-group" role="navigation" resolved="" data-aui-responsive="true"><div class="aui-header-inner"><div class="aui-header-before"><a class=" aui-dropdown2-trigger app-switcher-trigger" aria-controls="app-switcher" aria-haspopup="true" role="button" tabindex="0" data-aui-trigger="" href="#app-switcher" resolved="" aria-expanded="false"><span class="aui-icon aui-icon-small aui-iconfont-appswitcher">Linked Applications</span></a><div id="app-switcher" class="aui-dropdown2 aui-style-default aui-layer" role="menu" aria-hidden="true" data-is-switcher="true" data-environment="{&quot;isUserAdmin&quot;:false,&quot;isAppSuggestionAvailable&quot;:false,&quot;isSiteAdminUser&quot;:false}" resolved=""><div class="aui-dropdown2-section"><ul class="nav-links"><li class="nav-link nav-link-local"><a href="https://jira.hillel.it/secure/MyJiraHome.jspa" class="aui-dropdown2-radio aui-dropdown2-checked checked" title="https://jira.hillel.it/secure/MyJiraHome.jspa" resolved="" aria-checked="true" tabindex="0"><span class="nav-link-label">Hillel IT School JIRA</span></a></li><li class="nav-link"><a href="https://confluence.hillel.it/" class="aui-dropdown2-radio " title="https://confluence.hillel.it/" resolved="" aria-checked="false" tabindex="0"><span class="nav-link-label">Confluence</span></a></li><li class="nav-link"><a href="https://bitbucket.org/beautyguard" class="aui-dropdown2-radio " title="https://bitbucket.org/beautyguard" resolved="" aria-checked="false" tabindex="0"><span class="nav-link-label">Bitbucket - beautyguard</span></a></li><li class="nav-link"><a href="https://bitbucket.org/jee-jul-2020" class="aui-dropdown2-radio " title="https://bitbucket.org/jee-jul-2020" resolved="" aria-checked="false" tabindex="0"><span class="nav-link-label">Bitbucket - jee-jul-2020</span></a></li><li class="nav-link"><a href="https://bitbucket.org/randriyanov" class="aui-dropdown2-radio " title="https://bitbucket.org/randriyanov" resolved="" aria-checked="false" tabindex="0"><span class="nav-link-label">Bitbucket - randriyanov</span></a></li></ul></div></div></div><div class="aui-header-primary"><h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="https://jira.hillel.it/secure/MyJiraHome.jspa"><img src="/s/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/_/images/jira-software.png" alt="Hillel IT School JIRA" data-aui-responsive-header-index="0"></a></h1><ul class="aui-nav" style="width: auto;"><li><a href="/secure/Dashboard.jspa" class=" aui-nav-link aui-dropdown2-trigger aui-dropdown2-ajax" id="home_link" aria-haspopup="true" aria-controls="home_link-content" title="View and manage your dashboards" accesskey="d" resolved="" aria-expanded="false">Dashboards</a><div class="aui-dropdown2 aui-style-default aui-layer" id="home_link-content" data-aui-dropdown2-ajax-key="home_link" resolved="" aria-hidden="true"></div></li>
+<li id="create-menu"><a id="create_link" class="aui-button aui-button-primary aui-style create-issue " title="Create a new issue / bug / feature request / etc ( Type 'c' )" href="/secure/CreateIssue!default.jspa" accesskey="c" resolved="">Create</a></li></ul></div><div class="aui-header-secondary"><ul class="aui-nav">
+<li id="quicksearch-menu">
+    <form action="/secure/QuickSearch.jspa" method="get" id="quicksearch" class="aui-quicksearch dont-default-focus ajs-dirty-warning-exempt">
+        <input id="quickSearchInput" autocomplete="off" class="search" type="text" title="Search ( Type '/' )" placeholder="Search" name="searchString" accesskey="q"><div class="quick-search-spinner"></div>
+        <input type="submit" class="hidden" value="Search">
+    </form>
+</li>
+<li><a class="jira-feedback-plugin" role="button" aria-haspopup="true" id="jira-header-feedback-link" href="#"><span class="aui-icon aui-icon-small aui-iconfont-feedback">Give feedback to Atlassian</span></a></li>
+
+
+
+
+    <li id="system-help-menu">
+                    <a class="aui-nav-link aui-dropdown2-trigger aui-dropdown2-trigger-arrowless" id="help_menu" aria-haspopup="true" href="https://docs.atlassian.com/jira/jcore-docs-081/" target="$textUtils.htmlEncode($rootHelpMenuItem.params.target)" title="Help" resolved="" aria-controls="system-help-menu-content" aria-expanded="false"><span class="aui-icon aui-icon-small aui-iconfont-question-filled">Help</span></a>
+        <div id="system-help-menu-content" class="aui-dropdown2 aui-style-default aui-layer" resolved="" aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                                                <ul id="jira-help" class="aui-list-truncate">
+                                                            <li>
+                                    <a id="view_core_help" class="aui-nav-link " title="Go to the online documentation for Jira Core" href="https://docs.atlassian.com/jira/jcore-docs-081/" target="_blank">Jira Core help</a>
+                                </li>
+                                                            <li>
+                                    <a id="keyshortscuthelp" class="aui-nav-link " title="Get more information about Jira's Keyboard Shortcuts ( Type '?' )" href="/secure/ViewKeyboardShortcuts!default.jspa" target="_blank">Keyboard Shortcuts</a>
+                                </li>
+                                                            <li>
+                                    <a id="view_about" class="aui-nav-link " title="Get more information about Jira" href="/secure/AboutPage.jspa">About Jira</a>
+                                </li>
+                                                            <li>
+                                    <a id="view_credits" class="aui-nav-link " title="See who did what" href="/secure/credits/AroundTheWorld!default.jspa" target="_blank">Jira Credits</a>
+                                </li>
+                                                    </ul>
+                                    </div>
+                    </div>
+    </li>
+
+
+
+
+
+
+
+
+
+
+<li id="user-options">
+            <a class="aui-nav-link login-link" href="/login.jsp?os_destination=%2Fsecure%2FDashboard.jspa">Log In</a>
+                <div id="user-options-content" class="aui-dropdown2 aui-style-default aui-layer" resolved="" aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                                        </div>
+                    </div>
+    </li>
+</ul></div></div><!-- .aui-header-inner--></nav><!-- .aui-header -->
+    </header>
+    
+
+
+<div id="announcement-banner" class="alertHeader">
+    Уважаемые студенты!
+После обновления изменились URL. 
+Jira - https://jira.hillel.it
+Confluence - https://confluence.hillel.it
+</div>
+
+
+    <section id="content" role="main">
+<dashboard params="{&quot;dashboardDirectoryResourceUrl&quot;:&quot;https://jira.hillel.it/rest/config/1.0/directory&quot;,&quot;dashboardUrl&quot;:&quot;https://jira.hillel.it/rest/dashboards/1.0/10000&quot;,&quot;dashboardDirectoryUrl&quot;:&quot;https://jira.hillel.it/rest/dashboards/1.0//directory/10000&quot;,&quot;layoutAction&quot;:&quot;https://jira.hillel.it/rest/dashboards/1.0/10000/layout&quot;,&quot;errorGadgetUrl&quot;:&quot;https://jira.hillel.it/plugins/servlet/gadgets/error/spec-not-found&quot;,&quot;writable&quot;:false,&quot;canAddExternalGadgetsToDirectory&quot;:false,&quot;dashboardDiagnosticsUrl&quot;:&quot;/plugins/servlet/gadgets/dashboard-diagnostics&quot;,&quot;maxGadgets&quot;:20,&quot;gadgetDirectoryAdminUrl&quot;:&quot;https://jira.hillel.it/plugins/servlet/gadgets/admin&quot;,&quot;dashboardDirectoryBaseUrl&quot;:&quot;https://jira.hillel.it/&quot;,&quot;securityTokensUrl&quot;:&quot;https://jira.hillel.it/plugins/servlet/gadgets/security-tokens&quot;,&quot;dashboardResourceUrl&quot;:&quot;https://jira.hillel.it/rest/dashboards/1.0/10000&quot;}" layouts="{&quot;layouts&quot;:[{&quot;layout&quot;:&quot;AA&quot;,&quot;resourceUrl&quot;:&quot;https://jira.hillel.it/rest/dashboards/1.0/10000&quot;,&quot;active&quot;:true,&quot;id&quot;:&quot;10000&quot;,&quot;title&quot;:&quot;System Dashboard&quot;,&quot;uri&quot;:&quot;Dashboard.jspa?selectPageId=10000&quot;,&quot;gadgets&quot;:[{&quot;hasNonHiddenUserPrefs&quot;:false,&quot;color&quot;:&quot;color1&quot;,&quot;column&quot;:0,&quot;colorUrl&quot;:&quot;https://jira.hillel.it/rest/dashboards/1.0/10000/gadget/10000/color&quot;,&quot;title&quot;:&quot;Introduction&quot;,&quot;userPrefs&quot;:{&quot;action&quot;:&quot;https://jira.hillel.it/rest/dashboards/1.0/10000/gadget/10000/prefs&quot;,&quot;fields&quot;:[]},&quot;loaded&quot;:true,&quot;gadgetUrl&quot;:&quot;https://jira.hillel.it/rest/dashboards/1.0/10000/gadget/10000&quot;,&quot;width&quot;:0,&quot;context&quot;:{&quot;view&quot;:{&quot;viewType&quot;:{&quot;aliases&quot;:[&quot;DEFAULT&quot;,&quot;DASHBOARD&quot;,&quot;profile&quot;,&quot;home&quot;],&quot;name&quot;:&quot;default&quot;,&quot;canonicalName&quot;:&quot;default&quot;}},&quot;dashboardItem&quot;:{&quot;id&quot;:&quot;10000&quot;,&quot;properties&quot;:{}},&quot;dashboard&quot;:{&quot;id&quot;:&quot;10000&quot;}},&quot;isMaximizable&quot;:true,&quot;id&quot;:&quot;10000&quot;,&quot;configurable&quot;:false,&quot;height&quot;:0,&quot;inlineHtml&quot;:&quot;<div class=\&quot;g-intro\&quot;><div class=\&quot;intro\&quot;><img class=\&quot;intro-logo\&quot; src=\&quot;/images/intro-illustration.png\&quot;/><h3>Welcome to Hillel IT School JIRA<\/h3><p>New to Jira? Check out the <a id=\&quot;user-docs\&quot; href=\&quot;https://docs.atlassian.com/jira/jcore-docs-081/\&quot; alt=\&quot;Get help!\&quot; title=\&quot;Documentation\&quot;>Jira User's Guide<\/a>.<\/p><\/div><\/div>&quot;},{&quot;hasNonHiddenUserPrefs&quot;:false,&quot;color&quot;:&quot;color1&quot;,&quot;column&quot;:1,&quot;colorUrl&quot;:&quot;https://jira.hillel.it/rest/dashboards/1.0/10000/gadget/0/color&quot;,&quot;amdModule&quot;:&quot;jira-dashboard-items/login&quot;,&quot;title&quot;:&quot;Login&quot;,&quot;userPrefs&quot;:{&quot;action&quot;:&quot;https://jira.hillel.it/rest/dashboards/1.0/10000/gadget/0/prefs&quot;,&quot;fields&quot;:[{&quot;name&quot;:&quot;isElevatedSecurityCheckShown&quot;,&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;false&quot;,&quot;required&quot;:false},{&quot;name&quot;:&quot;isAdminFormOn&quot;,&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;false&quot;,&quot;required&quot;:false},{&quot;name&quot;:&quot;loginFailedByPermissions&quot;,&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;false&quot;,&quot;required&quot;:false},{&quot;name&quot;:&quot;externalUserManagement&quot;,&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;false&quot;,&quot;required&quot;:false},{&quot;name&quot;:&quot;isPublicMode&quot;,&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;false&quot;,&quot;required&quot;:false},{&quot;name&quot;:&quot;allowCookies&quot;,&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;true&quot;,&quot;required&quot;:false},{&quot;name&quot;:&quot;captchaFailure&quot;,&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;false&quot;,&quot;required&quot;:false},{&quot;name&quot;:&quot;loginSucceeded&quot;,&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;false&quot;,&quot;required&quot;:false}]},&quot;loaded&quot;:true,&quot;gadgetUrl&quot;:&quot;https://jira.hillel.it/rest/dashboards/1.0/10000/gadget/0&quot;,&quot;width&quot;:0,&quot;context&quot;:{&quot;view&quot;:{&quot;viewType&quot;:{&quot;aliases&quot;:[&quot;DEFAULT&quot;,&quot;DASHBOARD&quot;,&quot;profile&quot;,&quot;home&quot;],&quot;name&quot;:&quot;default&quot;,&quot;canonicalName&quot;:&quot;default&quot;}},&quot;dashboardItem&quot;:{&quot;id&quot;:&quot;0&quot;,&quot;properties&quot;:{&quot;isElevatedSecurityCheckShown&quot;:&quot;false&quot;,&quot;isAdminFormOn&quot;:&quot;false&quot;,&quot;loginFailedByPermissions&quot;:&quot;false&quot;,&quot;externalUserManagement&quot;:&quot;false&quot;,&quot;isPublicMode&quot;:&quot;false&quot;,&quot;allowCookies&quot;:&quot;true&quot;,&quot;captchaFailure&quot;:&quot;false&quot;,&quot;loginSucceeded&quot;:&quot;false&quot;}},&quot;dashboard&quot;:{&quot;id&quot;:&quot;10000&quot;}},&quot;isMaximizable&quot;:true,&quot;id&quot;:&quot;0&quot;,&quot;configurable&quot;:false,&quot;height&quot;:0,&quot;inlineHtml&quot;:&quot;<div id=\&quot;login-container\&quot; class=\&quot;\&quot;><form id=\&quot;loginform\&quot; method=\&quot;post\&quot; action=\&quot;#\&quot; name=\&quot;loginform\&quot; class=\&quot;aui gdt\&quot;><div class=\&quot;field-group\&quot;><label accesskey=\&quot;u\&quot; for=\&quot;login-form-username\&quot; id=\&quot;usernamelabel\&quot;><u>U<\/u>sername<\/label><input class=\&quot;text medium-field\&quot; id=\&quot;login-form-username\&quot; name=\&quot;os_username\&quot; type=\&quot;text\&quot;><\/div><div class=\&quot;field-group\&quot;><label accesskey=\&quot;p\&quot; for=\&quot;login-form-password\&quot; id=\&quot;passwordlabel\&quot;><u>P<\/u>assword<\/label><input class=\&quot;text medium-field\&quot; id=\&quot;login-form-password\&quot; name=\&quot;os_password\&quot; type=\&quot;password\&quot;><\/div><fieldset class=\&quot;group\&quot;><div class=\&quot;checkbox\&quot; id=\&quot;rememberme\&quot;><input class=\&quot;checkbox\&quot; id=\&quot;login-form-remember-me\&quot; name=\&quot;os_cookie\&quot; type=\&quot;checkbox\&quot; value=\&quot;true\&quot;><label accesskey=\&quot;r\&quot; for=\&quot;login-form-remember-me\&quot; id=\&quot;remembermelabel\&quot;><u>R<\/u>emember my login on this computer<\/label><\/div><\/fieldset><div class=\&quot;field-group\&quot; id=\&quot;publicmodeooff\&quot;><div id=\&quot;publicmodeoffmsg\&quot;>Not a member? To request an account, please contact your <a id=\&quot;contact-admin\&quot; href=\&quot;/secure/ContactAdministrators!default.jspa\&quot;>Jira administrators<\/a>.<\/div><\/div><div class=\&quot;buttons-container\&quot;><div class=\&quot;buttons\&quot;><input class=\&quot;aui-button aui-button-primary\&quot; id=\&quot;login\&quot; name=\&quot;login\&quot; type=\&quot;submit\&quot; value=\&quot;Log In\&quot;><a class=\&quot;cancel\&quot; href=\&quot;/secure/ForgotLoginDetails.jspa\&quot; id=\&quot;forgotpassword\&quot; target=\&quot;_parent\&quot;>Can&amp;#39;t access your account?<\/a><\/div><\/div><\/form><\/div>&quot;}],&quot;writable&quot;:false}]}" resolved=""><div id="dashboard" class="dashboard"><div id="dashboard-content"><div class="aui-page-header"><div class="aui-page-header-inner"><div class="aui-page-header-main"><h1>System Dashboard</h1></div><div class="aui-page-header-actions" id="dash-options"><div id="dash-throbber" class="throbber">&nbsp;</div><a aria-haspopup="true" class="aui-button aui-dropdown2-trigger aui-dropdown2-trigger-arrowless" resolved="" aria-controls="tools-dropdown-items" aria-expanded="false" href="#tools-dropdown-items"><span class="aui-icon aui-icon-small aui-iconfont-more">Tools</span></a><div id="tools-dropdown-items" class="aui-style-default aui-dropdown2 aui-layer" resolved="" aria-hidden="true"><ul class="aui-list-truncate"><li><a id="wallboard_link" class="item-link groupmarker" href="https://jira.hillel.it/plugins/servlet/Wallboard/?dashboardId=10000">View as wallboard</a></li></ul></div></div></div></div><div class="dashboard-shim"> </div><div class="layout layout-aa"><ul class="column first" style="min-height: 267px;"><li class="gadget" id="rep-10000" style="height: 158px;"></li></ul><ul class="column second" style="min-height: 267px;"><li class="gadget" id="rep-0" style="height: 266px;"></li></ul><ul class="column third" style="min-height: 267px;"></ul></div><div class="gadget color1" id="gadget-10000-renderbox" style="left: 3.43548%; top: 70px; width: 45.9641%;"><div class="dashboard-item-frame gadget-container" id="gadget-10000-chrome"><div class="dashboard-item-header"><h3 id="gadget-10000-title" class="dashboard-item-title">Introduction</h3><div class="gadget-menu"><ul><li><a href="#" id="gadget-10000-maximize" class="maximize" title="Maximize"><span class="aui-icon aui-icon-small aui-iconfont-vid-full-screen-on"></span></a></li><li class="aui-dd-parent dd-allocated"><a id="undefined" class="aui-dd-trigger standard" href="#"><span class="aui-icon-small aui-iconfont-more"></span></a><ul class="aui-dropdown standard hidden"><li class="dropdown-item"><a class="item-link minimization" href="#">Minimize</a></li></ul></li></ul></div></div><div class="dashboard-item-content "><form action="https://jira.hillel.it/rest/dashboards/1.0/10000/gadget/10000/prefs" class="aui userpref-form hidden" method="post" id="gadget-10000-edit"><fieldset><legend><span class="dashboard-item-title">Introduction</span> Preferences</legend></fieldset><div class="buttons-container submit"><input type="submit" class="submit" value="Save" name="save" id="gadget-10000-save"><input type="reset" class="cancel" value="Cancel" name="reset" id="gadget-10000-cancel"></div></form><div id="gadget-10000" class="gadget-inline" style="height: 128px;"><div class="g-intro"><div class="intro"><img class="intro-logo" src="/images/intro-illustration.png"><h3>Welcome to Hillel IT School JIRA</h3><p>New to Jira? Check out the <a id="user-docs" href="https://docs.atlassian.com/jira/jcore-docs-081/" alt="Get help!" title="Documentation">Jira User's Guide</a>.</p></div></div></div></div></div></div><div class="gadget color1" id="gadget-0-renderbox" style="left: 51.4699%; top: 70px; width: 45.9641%;"><div class="dashboard-item-frame gadget-container gadget-hover" id="gadget-0-chrome"><div class="dashboard-item-header"><h3 id="gadget-0-title" class="dashboard-item-title">Login</h3><div class="gadget-menu"><ul><li><a href="#" id="gadget-0-maximize" class="maximize" title="Maximize"><span class="aui-icon aui-icon-small aui-iconfont-vid-full-screen-on"></span></a></li><li class="aui-dd-parent dd-allocated"><a id="undefined" class="aui-dd-trigger standard" href="#"><span class="aui-icon-small aui-iconfont-more"></span></a><ul class="aui-dropdown standard hidden"><li class="dropdown-item"><a class="item-link minimization" href="#">Minimize</a></li></ul></li></ul></div></div><div class="dashboard-item-content "><form action="https://jira.hillel.it/rest/dashboards/1.0/10000/gadget/0/prefs" class="aui userpref-form hidden" method="post" id="gadget-0-edit"><fieldset><legend><span class="dashboard-item-title">Login</span> Preferences</legend><div class="field-group"><label for="gadget-0-form-isElevatedSecurityCheckShown-pref">undefined</label><input id="gadget-0-form-isElevatedSecurityCheckShown-pref" type="text" value="false" name="up_isElevatedSecurityCheckShown" class="string text"><br></div><div class="field-group"><label for="gadget-0-form-isAdminFormOn-pref">undefined</label><input id="gadget-0-form-isAdminFormOn-pref" type="text" value="false" name="up_isAdminFormOn" class="string text"><br></div><div class="field-group"><label for="gadget-0-form-loginFailedByPermissions-pref">undefined</label><input id="gadget-0-form-loginFailedByPermissions-pref" type="text" value="false" name="up_loginFailedByPermissions" class="string text"><br></div><div class="field-group"><label for="gadget-0-form-externalUserManagement-pref">undefined</label><input id="gadget-0-form-externalUserManagement-pref" type="text" value="false" name="up_externalUserManagement" class="string text"><br></div><div class="field-group"><label for="gadget-0-form-isPublicMode-pref">undefined</label><input id="gadget-0-form-isPublicMode-pref" type="text" value="false" name="up_isPublicMode" class="string text"><br></div><div class="field-group"><label for="gadget-0-form-allowCookies-pref">undefined</label><input id="gadget-0-form-allowCookies-pref" type="text" value="true" name="up_allowCookies" class="string text"><br></div><div class="field-group"><label for="gadget-0-form-captchaFailure-pref">undefined</label><input id="gadget-0-form-captchaFailure-pref" type="text" value="false" name="up_captchaFailure" class="string text"><br></div><div class="field-group"><label for="gadget-0-form-loginSucceeded-pref">undefined</label><input id="gadget-0-form-loginSucceeded-pref" type="text" value="false" name="up_loginSucceeded" class="string text"><br></div></fieldset><div class="buttons-container submit"><input type="submit" class="submit" value="Save" name="save" id="gadget-0-save"><input type="reset" class="cancel" value="Cancel" name="reset" id="gadget-0-cancel"></div></form><div id="gadget-0" class="gadget-inline" style="height: 236px;"><div id="login-container" class=""><form id="loginform" method="post" action="#" name="loginform" class="aui gdt"><div class="field-group"><label accesskey="u" for="login-form-username" id="usernamelabel"><u>U</u>sername</label><input class="text medium-field" id="login-form-username" name="os_username" type="text" style=""></div><div class="field-group"><label accesskey="p" for="login-form-password" id="passwordlabel"><u>P</u>assword</label><input class="text medium-field" id="login-form-password" name="os_password" type="password"></div><fieldset class="group"><div class="checkbox" id="rememberme"><input class="checkbox" id="login-form-remember-me" name="os_cookie" type="checkbox" value="true"><label accesskey="r" for="login-form-remember-me" id="remembermelabel"><u>R</u>emember my login on this computer</label></div></fieldset><div class="field-group" id="publicmodeooff"><div id="publicmodeoffmsg">Not a member? To request an account, please contact your <a id="contact-admin" href="/secure/ContactAdministrators!default.jspa">Jira administrators</a>.</div></div><div class="buttons-container"><div class="buttons"><input class="aui-button aui-button-primary" id="login" name="login" type="submit" value="Log In" resolved=""><a class="cancel" href="/secure/ForgotLoginDetails.jspa" id="forgotpassword" target="_parent">Can't access your account?</a></div></div></form></div></div></div></div></div></div></div><div id="diagnostic-warning" class="hidden"></div><div id="i18n-settings"><input class="locale-lang" type="hidden" value="en"><input class="locale-country" type="hidden" value="US"></div><dashboard-done resolved=""></dashboard-done></dashboard>
+    </section>
+    <footer id="footer" role="contentinfo">
+        
+
+<section class="footer-body">
+<ul class="atlassian-footer">
+    <li>
+        Atlassian Jira <a class="seo-link" rel="nofollow" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+                                            <span id="footer-build-information">(v8.1.0#801000-<span title="2e1cd1bb771978cda2c5e8f3f10539ab180613f6" data-commit-id="2e1cd1bb771978cda2c5e8f3f10539ab180613f6}">sha1:2e1cd1b</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" rel="nofollow" href="/secure/AboutPage.jspa/secure/AboutPage.jspa">About Jira</a>
+    </li>
+    <li>
+        <a id="footer-report-problem-link" rel="nofollow" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+    <ul class="atlassian-footer">
+        <li class="licensemessage">
+                Powered by a free Atlassian <a rel="nofollow" href="https://www.atlassian.com/software/jira">Jira</a> community license for Компьютерная школа Hillel. Try Jira - <a rel="nofollow" href="https://www.atlassian.com/software/jira">bug tracking software</a> for <i>your</i> team.
+
+        </li>
+    </ul>
+
+    <div id="footer-logo"><a rel="nofollow" href="https://www.atlassian.com/">Atlassian</a></div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<fieldset class="hidden parameters">
+    <input type="hidden" title="loggedInUser" value="">
+    <input type="hidden" title="ajaxTimeout" value="The call to the Jira server did not complete within the timeout period.  We are unsure of the result of this operation.">
+    <input type="hidden" title="JiraVersion" value="8.1.0">
+    <input type="hidden" title="ajaxUnauthorised" value="You are not authorized to perform this operation.  Please log in.">
+    <input type="hidden" title="baseURL" value="https://jira.hillel.it">
+    <input type="hidden" title="ajaxCommsError" value="The Jira server could not be contacted. This may be a temporary glitch or the server may be down. ">
+    <input type="hidden" title="ajaxServerError" value="The Jira server was contacted but has returned an error response. We are unsure of the result of this operation.">
+    <input type="hidden" title="ajaxErrorCloseDialog" value="Close this dialog and press refresh in your browser">
+    <input type="hidden" title="ajaxErrorDialogHeading" value="Communications Breakdown">
+
+    <input type="hidden" title="dirtyMessage" value="You have entered new data on this page. If you navigate away from this page without first saving your data, the changes will be lost.">
+    <input type="hidden" title="dirtyDialogMessage" value="You have entered new data in this dialog. If you navigate away from this dialog without first saving your data, the changes will be lost. Click cancel to return to the dialog.">
+    <input type="hidden" title="keyType" value="Type">
+    <input type="hidden" title="keyThen" value="then">
+    <input type="hidden" title="dblClickToExpand" value="Double click to expand">
+    <input type="hidden" title="actions" value="Actions">
+    <input type="hidden" title="removeItem" value="Remove">
+    <input type="hidden" title="workflow" value="Workflow">
+    <input type="hidden" title="labelNew" value="New Label">
+    <input type="hidden" title="issueActionsHint" value="Begin typing for available operations or press down to see all">
+    <input type="hidden" title="closelink" value="Close">
+    <input type="hidden" title="dotOperations" value="Operations">
+    <input type="hidden" title="dotLoading" value="Loading...">
+    <input type="hidden" title="frotherSuggestions" value="Suggestions">
+    <input type="hidden" title="frotherNomatches" value="No Matches">
+    <input type="hidden" title="multiselectVersionsError" value="{0} is not a valid version.">
+    <input type="hidden" title="multiselectComponentsError" value="{0} is not a valid component.">
+    <input type="hidden" title="multiselectGenericError" value="The value {0} is invalid.">
+</fieldset>
+
+    </footer>
+</div>
+
+
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/1.0/_/download/batch/jira.webresources:bigpipe-js/jira.webresources:bigpipe-js.js" data-wrm-key="jira.webresources:bigpipe-js" data-wrm-batch-type="resource" data-initially-rendered=""></script>
+<script type="text/javascript" src="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/1.0/_/download/batch/jira.webresources:bigpipe-init/jira.webresources:bigpipe-init.js" data-wrm-key="jira.webresources:bigpipe-init" data-wrm-batch-type="resource" data-initially-rendered=""></script>
+
+<form id="jira_request_timing_info" class="dont-default-focus">
+	<fieldset class="parameters hidden">
+		<input type="hidden" title="jira.request.start.millis" value="1600094297048">
+		<input type="hidden" title="jira.request.server.time" value="32">
+		<input type="hidden" title="jira.request.id" value="878x406798x1">
+		<input type="hidden" title="jira.session.expiry.time" value="-">
+		<input type="hidden" title="jira.session.expiry.in.mins" value="-">
+		<input id="jiraConcurrentRequests" type="hidden" name="jira.request.concurrent.requests" value="1">
+		<input type="hidden" title="db.conns.time.in.ms" value="0">
+	</fieldset>
+</form>
+<!--
+	                 REQUEST ID : 878x406798x1
+	          REQUEST TIMESTAMP : [14/Sep/2020:14:38:17 +0000]
+	               REQUEST TIME : 0.0320
+	                 ASESSIONID : -
+	        CONCURRENT REQUESTS : 1
+
+	                      db.conns : OpSnapshot{name='db.conns', invocationCount=3, elapsedTotal=824616, elapsedMin=126834, elapsedMax=352679, resultSetSize=0, cpuTotal=0, cpuMin=0, cpuMax=0}
+-->
+
+
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap" class="fancybox-ie"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><div id="browser-metrics-report" style="display: none;">{"report":{"apdex":1,"isInitial":true,"journeyId":"cbfb22db-f236-49a3-a7c0-60548ecd3fe6","key":"jira.dashboard","navigationType":0,"readyForUser":830,"redirectCount":0,"resourceLoadedEnd":392,"resourceLoadedStart":136,"resourceTiming":[{"duration":152,"initiatorType":"link","name":"https://jira.hillel.it/s/99d8a5797ad3e987552043e12d854e99-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/5435cf25f409c0ae2e20397b08c1e337/_/download/contextbatch/css/_super/batch.css","startTime":136,"connectEnd":136,"connectStart":136,"domainLookupEnd":136,"domainLookupStart":136,"fetchStart":136,"redirectEnd":0,"redirectStart":0,"requestStart":263,"responseEnd":288,"responseStart":286,"secureConnectionStart":0},{"duration":143,"initiatorType":"link","name":"https://jira.hillel.it/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/8.0.1/_/download/batch/com.atlassian.auiplugin:split_aui.pattern.label/com.atlassian.auiplugin:split_aui.pattern.label.css","startTime":137,"connectEnd":137,"connectStart":137,"domainLookupEnd":137,"domainLookupStart":137,"fetchStart":137,"redirectEnd":0,"redirectStart":0,"requestStart":268,"responseEnd":280,"responseStart":280,"secureConnectionStart":0},{"duration":149,"initiatorType":"link","name":"https://jira.hillel.it/s/1e9360cc6af883eb6b91822389e9cf86-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/1.0/_/download/batch/jira.webresources:global-static-adgs/jira.webresources:global-static-adgs.css","startTime":137,"connectEnd":137,"connectStart":137,"domainLookupEnd":137,"domainLookupStart":137,"fetchStart":137,"redirectEnd":0,"redirectStart":0,"requestStart":271,"responseEnd":286,"responseStart":284,"secureConnectionStart":0},{"duration":163,"initiatorType":"link","name":"https://jira.hillel.it/s/50061ed0ee1c4bdf7c845e754e4bd816-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/1211b6efb3d0806bf82b237acfa180f5/_/download/contextbatch/css/atl.dashboard,jira.global,atl.general,jira.dashboard,-_super/batch.css?agile_global_admin_condition=true&amp;jag=true","startTime":137,"connectEnd":137,"connectStart":137,"domainLookupEnd":137,"domainLookupStart":137,"fetchStart":137,"redirectEnd":0,"redirectStart":0,"requestStart":268,"responseEnd":300,"responseStart":293,"secureConnectionStart":0},{"duration":152,"initiatorType":"link","name":"https://jira.hillel.it/s/92fe13960ed05b21a42b5b5131daed6a-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/1.0/_/download/batch/jira.webresources:global-static/jira.webresources:global-static.css","startTime":138,"connectEnd":138,"connectStart":138,"domainLookupEnd":138,"domainLookupStart":138,"fetchStart":138,"redirectEnd":0,"redirectStart":0,"requestStart":273,"responseEnd":290,"responseStart":288,"secureConnectionStart":0},{"duration":151,"initiatorType":"script","name":"https://jira.hillel.it/s/a2ef34d57d10a3c301a6f8bc558f73ae-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/1211b6efb3d0806bf82b237acfa180f5/_/download/contextbatch/js/atl.dashboard,jira.global,atl.general,jira.dashboard,-_super/batch.js?agile_global_admin_condition=true&amp;content-type=text%2Fjavascript%3B+charset%3DUTF-8&amp;jag=true&amp;locale=en-US","startTime":139,"connectEnd":139,"connectStart":139,"domainLookupEnd":139,"domainLookupStart":139,"fetchStart":139,"redirectEnd":0,"redirectStart":0,"requestStart":280,"responseEnd":290,"responseStart":290,"secureConnectionStart":0},{"duration":232,"initiatorType":"script","name":"https://jira.hillel.it/s/a1b56ffff94ae958c24e779daa4b04a7-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/5435cf25f409c0ae2e20397b08c1e337/_/download/contextbatch/js/_super/batch.js?locale=en-US","startTime":139,"connectEnd":139,"connectStart":139,"domainLookupEnd":139,"domainLookupStart":139,"fetchStart":139,"redirectEnd":0,"redirectStart":0,"requestStart":279,"responseEnd":371,"responseStart":334,"secureConnectionStart":0},{"duration":160,"initiatorType":"script","name":"https://jira.hillel.it/s/6555976d7ba3342ee61cccff904c3bfd-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/aae1242f5fc81cc6a5bb8bc963ccda29/_/download/contextbatch/js/atl.global,-_super/batch.js?locale=en-US","startTime":140,"connectEnd":140,"connectStart":140,"domainLookupEnd":140,"domainLookupStart":140,"fetchStart":140,"redirectEnd":0,"redirectStart":0,"requestStart":282,"responseEnd":300,"responseStart":300,"secureConnectionStart":0},{"duration":161,"initiatorType":"script","name":"https://jira.hillel.it/s/8786873d149fcfb0748304ba6e62a1af-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/3.0.3/_/download/batch/com.atlassian.jira.jira-tzdetect-plugin:tzdetect-banner-component/com.atlassian.jira.jira-tzdetect-plugin:tzdetect-banner-component.js?locale=en-US","startTime":140,"connectEnd":140,"connectStart":140,"domainLookupEnd":140,"domainLookupStart":140,"fetchStart":140,"redirectEnd":0,"redirectStart":0,"requestStart":285,"responseEnd":301,"responseStart":300,"secureConnectionStart":0},{"duration":252,"initiatorType":"script","name":"https://jira.hillel.it/s/a2ef34d57d10a3c301a6f8bc558f73ae-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/1211b6efb3d0806bf82b237acfa180f5/_/download/contextbatch/js/atl.dashboard,jira.global,atl.general,jira.dashboard,-_super/batch.js?agile_global_admin_condition=true&amp;jag=true&amp;locale=en-US","startTime":140,"connectEnd":140,"connectStart":140,"domainLookupEnd":140,"domainLookupStart":140,"fetchStart":140,"redirectEnd":0,"redirectStart":0,"requestStart":281,"responseEnd":392,"responseStart":319,"secureConnectionStart":0},{"duration":168,"initiatorType":"script","name":"https://jira.hillel.it/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/3.0.3/_/download/batch/com.atlassian.jira.jira-tzdetect-plugin:tzdetect-lib/com.atlassian.jira.jira-tzdetect-plugin:tzdetect-lib.js","startTime":141,"connectEnd":141,"connectStart":141,"domainLookupEnd":141,"domainLookupStart":141,"fetchStart":141,"redirectEnd":0,"redirectStart":0,"requestStart":295,"responseEnd":309,"responseStart":308,"secureConnectionStart":0},{"duration":188,"initiatorType":"script","name":"https://jira.hillel.it/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/1.0/_/download/batch/jira.webresources:calendar-en/jira.webresources:calendar-en.js","startTime":141,"connectEnd":141,"connectStart":141,"domainLookupEnd":141,"domainLookupStart":141,"fetchStart":141,"redirectEnd":0,"redirectStart":0,"requestStart":310,"responseEnd":329,"responseStart":329,"secureConnectionStart":0},{"duration":187,"initiatorType":"script","name":"https://jira.hillel.it/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/1.0/_/download/batch/jira.webresources:calendar-localisation-moment/jira.webresources:calendar-localisation-moment.js","startTime":142,"connectEnd":142,"connectStart":142,"domainLookupEnd":142,"domainLookupStart":142,"fetchStart":142,"redirectEnd":0,"redirectStart":0,"requestStart":314,"responseEnd":329,"responseStart":329,"secureConnectionStart":0},{"duration":188,"initiatorType":"script","name":"https://jira.hillel.it/s/f7fbb1e6a6948ca974e5062368f704f2-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/8.0.1/_/download/batch/com.atlassian.auiplugin:split_aui.pattern.label/com.atlassian.auiplugin:split_aui.pattern.label.js?locale=en-US","startTime":142,"connectEnd":142,"connectStart":142,"domainLookupEnd":142,"domainLookupStart":142,"fetchStart":142,"redirectEnd":0,"redirectStart":0,"requestStart":315,"responseEnd":330,"responseStart":330,"secureConnectionStart":0},{"duration":186,"initiatorType":"script","name":"https://jira.hillel.it/s/f7fbb1e6a6948ca974e5062368f704f2-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/8.0.1/_/download/batch/com.atlassian.auiplugin:split_aui.pattern.table/com.atlassian.auiplugin:split_aui.pattern.table.js?locale=en-US","startTime":143,"connectEnd":143,"connectStart":143,"domainLookupEnd":143,"domainLookupStart":143,"fetchStart":143,"redirectEnd":0,"redirectStart":0,"requestStart":316,"responseEnd":329,"responseStart":329,"secureConnectionStart":0},{"duration":203,"initiatorType":"link","name":"https://jira.hillel.it/s/4e228b4bf2c0f2970b0a3bd0cca3635a-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/966c1ac51402bf7d09640d7a749a72d6/_/download/contextbatch/css/jira.global.look-and-feel,-_super/batch.css","startTime":143,"connectEnd":143,"connectStart":143,"domainLookupEnd":143,"domainLookupStart":143,"fetchStart":143,"redirectEnd":0,"redirectStart":0,"requestStart":319,"responseEnd":346,"responseStart":346,"secureConnectionStart":0},{"duration":201,"initiatorType":"script","name":"https://jira.hillel.it/rest/api/1.0/shortcuts/801000/bf51fc7342fffc0b2209e411302a6ac0/shortcuts.js","startTime":144,"connectEnd":144,"connectStart":144,"domainLookupEnd":144,"domainLookupStart":144,"fetchStart":144,"redirectEnd":0,"redirectStart":0,"requestStart":319,"responseEnd":345,"responseStart":345,"secureConnectionStart":0},{"duration":113,"initiatorType":"script","name":"https://jira.hillel.it/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/1.0/_/download/batch/jira.webresources:bigpipe-js/jira.webresources:bigpipe-js.js","startTime":219,"connectEnd":219,"connectStart":219,"domainLookupEnd":219,"domainLookupStart":219,"fetchStart":219,"redirectEnd":0,"redirectStart":0,"requestStart":320,"responseEnd":332,"responseStart":332,"secureConnectionStart":0},{"duration":114,"initiatorType":"script","name":"https://jira.hillel.it/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/1.0/_/download/batch/jira.webresources:bigpipe-init/jira.webresources:bigpipe-init.js","startTime":219,"connectEnd":219,"connectStart":219,"domainLookupEnd":219,"domainLookupStart":219,"fetchStart":219,"redirectEnd":0,"redirectStart":0,"requestStart":320,"responseEnd":333,"responseStart":333,"secureConnectionStart":0},{"duration":500,"initiatorType":"other","name":"https://jira.hillel.it/s/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/_/images/fav-jsw.png","startTime":271,"connectEnd":271,"connectStart":271,"domainLookupEnd":271,"domainLookupStart":271,"fetchStart":271,"redirectEnd":0,"redirectStart":0,"requestStart":730,"responseEnd":771,"responseStart":771,"secureConnectionStart":0},{"duration":55,"initiatorType":"xmlhttprequest","name":"https://jira.hillel.it/rest/webResources/1.0/resources","startTime":623,"connectEnd":625,"connectStart":625,"domainLookupEnd":625,"domainLookupStart":625,"fetchStart":623,"redirectEnd":0,"redirectStart":0,"requestStart":625,"responseEnd":678,"responseStart":678,"secureConnectionStart":0},{"duration":14,"initiatorType":"css","name":"https://jira.hillel.it/s/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/8.0.1/_/download/resources/com.atlassian.auiplugin:split_aui.splitchunk.vendors--7da3927366/b91d19259cf480661ef93b67beb45234.svg","startTime":664,"connectEnd":664,"connectStart":664,"domainLookupEnd":664,"domainLookupStart":664,"fetchStart":664,"redirectEnd":0,"redirectStart":0,"requestStart":667,"responseEnd":678,"responseStart":678,"secureConnectionStart":0},{"duration":20,"initiatorType":"other","name":"https://jira.hillel.it/s/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/8.0.1/_/download/resources/com.atlassian.auiplugin:split_aui.splitchunk.56dfb54d0c/2b9e4f3137c709cc10decce89e4de920.woff","startTime":667,"connectEnd":667,"connectStart":667,"domainLookupEnd":667,"domainLookupStart":667,"fetchStart":667,"redirectEnd":0,"redirectStart":0,"requestStart":669,"responseEnd":687,"responseStart":687,"secureConnectionStart":0},{"duration":92,"initiatorType":"xmlhttprequest","name":"https://jira.hillel.it/rest/menu/latest/appswitcher?_=1600094298973","startTime":727,"connectEnd":727,"connectStart":727,"domainLookupEnd":727,"domainLookupStart":727,"fetchStart":727,"redirectEnd":0,"redirectStart":0,"requestStart":732,"responseEnd":819,"responseStart":819,"secureConnectionStart":0},{"duration":29,"initiatorType":"script","name":"https://jira.hillel.it/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-pq05h5/801000/35e2f83cf7492bd577ecc05d90d8492c/be9ff0efea54a6453d2ac60b92912a09/_/download/contextbatch/js/browser-metrics-plugin.contrib,-_super,-atl.dashboard,-atl.general/batch.js?agile_global_admin_condition=true&amp;jag=true","startTime":747,"connectEnd":747,"connectStart":747,"domainLookupEnd":747,"domainLookupStart":747,"fetchStart":747,"redirectEnd":0,"redirectStart":0,"requestStart":750,"responseEnd":776,"responseStart":776,"secureConnectionStart":0}],"threshold":1000,"fetchStart":0,"domainLookupStart":14,"domainLookupEnd":14,"connectStart":14,"connectEnd":46,"secureConnectionStart":23,"requestStart":46,"responseStart":110,"responseEnd":142,"domLoading":119,"domInteractive":698,"domContentLoadedEventStart":705,"domContentLoadedEventEnd":731,"domComplete":740,"loadEventStart":740,"loadEventEnd":743,"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:76.0) Gecko/20100101 Firefox/76.0","marks":[],"measures":[],"correlationId":"7391623599a751","serverDuration":32,"dbConnsTimeInMs":0,"applicationHash":"2e1cd1bb771978cda2c5e8f3f10539ab180613f6","experiments":[]}}</div></body></html>
